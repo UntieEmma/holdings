@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Equipment Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Shale Holdings (Pty Ltd)</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="portfolio">
+            <div class="container">
+                <h2>Our Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="images/download (2).jfif" alt="Major Highway Construction">
+                        <h3>Major Highway Construction</h3>
+                        <p>This project involved the use of heavy machinery to pave a new highway stretch across 200 miles.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/download.jfif" alt="Urban Building Development">
+                        <h3>Urban Building Development</h3>
+                        <p>Providing cranes and concrete mixers, we facilitated the construction of a 50-story commercial building.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/download (6).jfif" alt="Bridge Over River" width="250">
+                        <h3>Bridge Over River</h3>
+                        <p>We supplied specialized drilling and heavy-lifting equipment for a major bridge project spanning a large river.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Construction Equipment Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.portfolio-item {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.portfolio-item h3 {
+    color: #333;
+    padding: 10px 0 5px 0;
+}
+
+.portfolio-item p {
+    font-size: 14px;
+    color: #666;
+    font-size: 18px;
+}
+@media (max-width: 600px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header h1 {
+        font-size: 24px;
+        color: white;
+    }
+    
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    header nav ul li {
+        margin-right: 20px;
+    }
+    
+    header nav ul li:last-child {
+        margin-right: 0;
+    }
+    
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    header nav ul li a:hover {
+        color: #ffcc00;
+    }
+    
+    main {
+        padding: 50px 0;
+    }
+    
+    section {
+        background-color: rgb(224, 171, 171);
+        padding: 50px 0;
+    }
+    
+    section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+    
+    #home {
+        background-image: url('construction-equipment.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: #fff;
+        padding: 100px 0;
+    }
+    
+    #home h2 {
+        font-size: 48px;
+    }
+    
+    #home p {
+        font-size: 24px;
+    }
+    
+    </style>
